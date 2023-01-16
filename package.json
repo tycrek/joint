@@ -3,6 +3,21 @@
 	"version": "0.0.0",
 	"description": "Common functions for tycrek projects",
 	"main": "dist/joint.js",
+	"engines": {
+		"node": ">=16.14.x",
+		"npm": ">=8.17.x"
+	},
+	"files": [
+		"dist"
+	],
+	"publishConfig": {
+		"access": "public"
+	},
+	"scripts": {
+		"build": "rm -dr ./dist/ & tsc",
+		"release": "np",
+		"test": "node test.js"
+	},
 	"repository": "github:tycrek/joint",
 	"keywords": [
 		"common"
