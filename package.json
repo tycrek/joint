@@ -1,6 +1,6 @@
 {
 	"name": "@tycrek/joint",
-	"version": "0.0.0",
+	"version": "1.0.0-0",
 	"description": "Common functions for tycrek projects",
 	"main": "dist/joint.js",
 	"engines": {
