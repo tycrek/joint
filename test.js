@@ -1,7 +1,13 @@
-const { isProd, numbers, pad, path } = require('./dist/joint');
+const { isProd, nofavicon, numbers, pad, path } = require('./dist/joint');
 
 // Test isProd
 console.log(`isProd(): ${isProd()}`);
+
+// Test nofavicon (kind of) (none, file, url)
+const newline = require('os').EOL;
+console.log(`nofavicon.none: ${nofavicon.none.toString().replaceAll(newline, ' ')}`);
+console.log(`nofavicon.file: ${nofavicon.file.toString().replaceAll(newline, ' ')}`);
+console.log(`nofavicon.url: ${nofavicon.url.toString().replaceAll(newline, ' ')}`);
 
 // Test numbers
 console.log(`isOdd(1): ${numbers.isOdd(1)}`);
